@@ -1,0 +1,49 @@
+@import 'tailwindcss';
+
+:root {
+  --bb-navy: #0b1f3a;
+  --bb-navy-soft: #16345c;
+  --bb-panel: #c8ced6;
+  --bb-panel-inner: #9aa3ad;
+  --bb-slot: #1c1f24;
+  --bb-slot-edge: #2e333b;
+  --bb-amp: #e8ebef;
+  --bb-yellow: #f5c518;
+  --bb-ink: #f4f7fb;
+  --bb-muted: #a8b3c2;
+}
+
+@font-face {
+  font-family: 'Breaker Display';
+  src: local('Avenir Next Condensed'), local('Arial Narrow'), local('Helvetica Neue');
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  color: var(--bb-ink);
+  font-family: 'Avenir Next', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, #1a3a66 0%, transparent 55%),
+    linear-gradient(165deg, #071526 0%, var(--bb-navy) 45%, #102848 100%);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
